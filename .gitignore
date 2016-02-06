@@ -3,4 +3,6 @@ node_modules/
 platforms/
 
 *.png
+*.psd
+*.svg
 *.zip
