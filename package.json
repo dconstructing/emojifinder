@@ -1,6 +1,6 @@
 {
   "name": "emojifinder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Android App to help find and use emoji",
   "main": "index.js",
   "scripts": {
