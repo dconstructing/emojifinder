@@ -23,16 +23,23 @@
   },
   "homepage": "https://github.com/dconstructing/emojifinder#readme",
   "dependencies": {
-    "emojione": "^2.1.0",
-    "nativescript": "^1.6.1",
-    "nativescript-clipboard": "^1.1.2",
-    "nativescript-grid-view": "^1.3.0",
-    "tns-core-modules": "1.6.0"
+    "emojione": "^2.2.7",
+    "nativescript": "^2.4.1",
+    "nativescript-clipboard": "^1.1.5",
+    "nativescript-grid-view": "^1.3.3",
+    "semver": "^5.3.0",
+    "tns-core-modules": "2.4.1"
   },
   "nativescript": {
     "id": "com.dconstructing.emojifinder",
     "tns-android": {
-      "version": "1.6.1"
+      "version": "2.4.1"
     }
+  },
+  "devDependencies": {
+    "babel-traverse": "6.19.0",
+    "babel-types": "6.19.0",
+    "babylon": "6.14.1",
+    "lazy": "1.0.11"
   }
 }
