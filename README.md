@@ -13,6 +13,9 @@ Do not run `npm install` to install dependencies. Newer npm versions install all
 3. Delete `node_modules/nativescript/node_modules/log4js/node_modules/semver/semver.browser.js.gz` and `node_modules/nativescript/node_modules/log4js/node_modules/semver/semver.min.js.gz`
    - At least until nativescript uses log4js 1.0.1 or newer.
 
+4. Delete `node_modules/emojione/assets` directory.
+   - We don't need the actual images and they bloat the app size.
+
 4. Add app icons as `ic_launcher.png`
 ```
 app/App_Resources/Android/mipmap-xxxhdpi/ic_launcher.png
@@ -23,3 +26,10 @@ app/App_Resources/Android/mipmap-hhdpi/ic_launcher.png
 ```
 
 To deploy to your device, run `npm run launch`, `npm run tns -- run android`, or (if nativescript is installed globally) `tns run android`
+
+## Release
+
+```
+npm run tns -- build android --release --key-store-path /media/dcox/DUOLINK3/security/dconstructing-release-B.keystore --key-store-password <keystore password> --key-store-alias emoji --key-store-alias-password <keystore alias password>
+```
+Yeah, you really do have to type your password into the console.
